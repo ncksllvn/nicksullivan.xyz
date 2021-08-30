@@ -1,32 +1,50 @@
 <!doctype html>
 <html>
 {% include 'head.njk' %}
-<body>
+<body class="bg-yellow-50">
 
-  <div class="min-h-screen py-6 px-6 sm:px-12 max-w-xl mx-auto">
-
-    <div class="prose my-4">
-      {{ content | safe }}
+<header>
+  <div class="bg-black text-white p-1">
+    <div class="px-6 sm:px-12 max-w-2xl mx-auto">
+      <a class="text-sm font-serif border border-transparent hover:border-white p-2 rounded-md" href="{{ "/" | url }}">🏡 🦶🏻 ✌🏻 Nick Sullivan’s blog</a>
     </div>
-
-    <h2 class="text-xl">Stories</h2>
-    <ul class="ml-4 mb-4">
-    {%- for story in collections.stories -%}
-      <li>
-        <a class="text-blue-600" href="{{ story.url | url }}">{{ story.data.title }}</a>
-      </li>
-    {%- endfor -%}
-    </ul>
-
-    <h2 class="text-xl">Projects</h2>
-    <ul class="ml-4 mb-4">
-    {%- for project in collections.projects -%}
-      <li>
-        <a class="text-blue-600" href="{{ project.url | url }}">{{ project.data.title }}</a>
-      </li>
-    {%- endfor -%}
-
-    </ul>
   </div>
+</header>
+
+<div class="py-6 px-6 sm:px-12 max-w-2xl mx-auto pace">
+
+  <section>
+    <div class="bg-green-200 rounded-lg p-4">
+      <div class="grid sm:grid-cols-2 gap-6 items-center">
+        <div class="flex place-content-center">
+          <img class="border border-gray-900 rounded-full" src="/uploads/nick-edgewood-5k.jpg"
+            alt="A picture of the author of this blog smiling"/>
+        </div>
+        <div class="text-center">
+          <h1 class="text-5xl font-serif">{{ title }}</h1>
+          <div class="prose my-4">
+            {{ content | safe }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-yellow-200 mt-4 rounded-lg p-4 max-w-sm mx-auto">
+      <h2 class="text-3xl font-serif text-center">My recent writings</h2>
+      <ul class="my-2 text-center">
+      {% for article in collections.all %}
+        {% if article.url != '/' %}
+          <li class="mt-1">
+            <a class="text-blue-600 hover:underline" href="{{ article.url | url }}">{{ article.data.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+</div>
 </body>
 </html>
