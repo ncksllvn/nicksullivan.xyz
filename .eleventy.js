@@ -4,9 +4,11 @@ module.exports = (eleventyConfig) => {
   });
 
   return {
-    input: 'input',
-    includes: '../_includes',
-    layouts: '../_layouts',
-    data: '../_data'
+    dir: {
+      input: 'input',
+      includes: '../_includes',
+      layouts: '../_layouts',
+      data: '../_data'
+    }
   };
 }
