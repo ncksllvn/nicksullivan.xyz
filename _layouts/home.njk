@@ -3,44 +3,52 @@
 
 {% include 'head.njk' %}
 
-<body class="bg-yellow-50">
+<body class="bg-green-50">
 
 {% include 'header.njk' %}
 
-<div class="py-6 px-6 sm:px-12 max-w-2xl mx-auto">
-
-  <section>
-    <div class="bg-green-200 rounded-lg p-4">
-      <div class="grid sm:grid-cols-2 gap-6 items-center">
-        <div class="flex place-content-center">
-          <img class="border border-gray-900 rounded-full" src="/uploads/nick-edgewood-5k.jpg"
-            alt="A picture of the author of this blog smiling"/>
-        </div>
-        <div class="text-center">
-          <h1 class="text-5xl font-serif">{{ title }}</h1>
-          <div class="prose my-4">
-            {{ content | safe }}
-          </div>
+<main>
+  <div class="bg-green-100">
+  <div class="py-6 px-6 sm:px-12 xl:px-0 max-w-2xl mx-auto">
+    <div class="flex-col md:flex-row flex place-items-center gap-6 lg:gap-12">
+      <div class="flex place-content-center">
+        <img class="border border-black rounded-full max-w-none w-36 lg:w-64" src="{{ profile_pic.url }}"
+          alt="{{ profile_pic.alt }}"/>
+      </div>
+      <div class="flex place-content-center align-middle">
+        <div class="text-center leading-7">
+          <h1 class="text-5xl font-serif font-semibold">{{ intro.headline }}</h1>
+          <p class="my-2 font-serif">
+            {{ intro.content }}
+          </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  </div>
+</main>
 
-  <section>
-    <div class="bg-yellow-200 mt-4 rounded-lg p-4 max-w-sm mx-auto">
-      <h2 class="text-3xl font-serif text-center">My recent writings</h2>
-      <ul class="my-2 text-center">
-      {% for article in collections.all %}
-        {% if article.url != '/' %}
-          <li class="mt-1">
-            <a class="text-blue-600 hover:underline" href="{{ article.url | url }}">{{ article.data.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
+<aside>
+  <div class="bg-yellow-200">
+    <div class="py-6 px-6 sm:px-12 xl:px-0 max-w-2xl mx-auto">
+        <h2 class="text-3xl font-serif font-semibold">My recent writings</h2>
+        <ul>
+        {% for article in collections.all %}
+          {% if article.url != '/' %}
+            <li>
+              <a class="inline-block mt-1 p-2 -m-2 hover:bg-yellow-100 rounded-md" href="{{ article.url | url }}">
+                <h3 class="font-semibold font-serif text-lg text-blue-700">{{ article.data.title }}</h3>
+                <p class="text-gray-600 text-sm">{{ article.data.subtitle | safe }}</p>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
     </div>
-  </section>
+  </div>
+</aside>
 
-</div>
+{% include 'footer.njk' %}
+
 </body>
 </html>
