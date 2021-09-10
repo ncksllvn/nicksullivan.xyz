@@ -2,11 +2,11 @@
 layout: article
 date: 2021-09-08
 title: Ahoy from Kentucky
-subtitle: My goals with this, remembering the times I tried it before, and reframing it from a blog into a "digital garden."
+subtitle: My goals in starting this, remembering the times I tried before, and reframing it into a "digital garden."
 ---
 They say the first step is often the hardest, but that wasn’t always true for me - sometimes, that was the easy part. That does, however, seem to be the case with writing this post, because actually getting started with _it_ was a pretty daunting task.
 
-So brace yourself, because this post is going to be very meta.
+So brace yourself, because this post is going to be very meta…
 
 I only have one clearly defined goal for this blog, which is simply to _not_ delete it. That’s all. I’ll forgive myself if I lose interest and let it float away into the digital Milky Way of the internet, just as long as it __hasn’t been deleted__.
 
@@ -24,15 +24,17 @@ _Future-me, if you are listening, __leave this blog alone__._
 
 </div>
 
-We often look back at ourselves in memories, old photos, or our creative works and feel embarrassed, while at the time, we were perfectly fine. I think an optimistic perspective might encourage us to celebrate that person, even if only in the sense that we are proud of our growth since then. I suppose then that my second goal for this blog is that as time passes, it can provide me with some perspective of self-growth as I read my old posts.
+We often look back at ourselves in memories, old photos, or our creative works with disapproval, while at the time, we were perfectly fine. Wouldn’t it be weird if we were to celebrate that person, even if only in the sense that we are proud of our growth since then? I think a reasonable second goal would be for this blog to provide me with some perspective of self-growth as time passes and I read my old posts.
 
 But with that said, it doesn’t bother me that I deleted those old blogs 😁
 
-While thinking of how this site would be organized and who would visit, I struggled with reconciling the technical stuff I want to write with the personal stuff I’d like to share. __Does it make sense for both types of writing to live on the same website?__
+While thinking of how this site would be organized and who would visit, I struggled with reconciling the technical stuff I want to write with the personal stuff I’d like to share.
 
-It seemed to me that the natural way to structure the website would be for a visitor to be immediately presented with a fork in the road - go left to take the technical road, or go right to take the personal road. It was the most obvious organizational pattern, like the typical dichotomy of a person as a professional versus a person as a person.
+__Does it make sense for both types of writing to live on the same website?__
 
-However, now that I have thought more deeply about it, it is pretty unlikely that anyone is going to enjoy all of what I write into either group, and maybe it is more likely that a visitor will enjoy just some of each. Perhaps each individual post is its own island that has its own relationships with the other islands, and digital travelers island-hop across the site as they explore. Meanwhile, other travelers may enjoy one island and that’s all.
+It seemed to me that the natural way to structure the website would be for a visitor to be immediately presented with a fork in the road - go left to take the technical road, or go right to take the personal road. It was the most obvious organizational pattern, like a person as a professional versus a person as a person. You’re either in the office or you’re somewhere else.
+
+However, now that I have thought more deeply about it, it is pretty unlikely that anyone is going to enjoy all of what I write into either group, and maybe it is more likely that a visitor will enjoy just some of each. Maybe each post is its own island that has its own relationships with the other islands, and visitors island-hop across the site as they explore. Meanwhile, other travelers may enjoy one island and that’s all.
 
 Island-hopping may be a bit of a stretch. A more accurate analogy might be that the website is a gathering (party, maybe) where conversations can span the whole spectrum of one’s life and not everyone connects with the topic of each particular conversation.
 
