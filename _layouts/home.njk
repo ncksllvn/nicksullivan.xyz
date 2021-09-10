@@ -10,12 +10,12 @@
 <main>
   <div class="bg-green-100">
   <div class="py-6 px-6 sm:px-12 xl:px-0 max-w-2xl mx-auto">
-    <div class="flex-col md:flex-row flex place-items-center gap-6 lg:gap-12">
+    <div class="flex-col md:flex-row flex place-items-center">
       <div class="flex place-content-center">
-        <img class="border border-black rounded-full max-w-none w-36 lg:w-64" src="{{ profile_pic.url }}"
+        <img class="border border-black rounded-full max-w-none w-36 h-36 lg:h-64 lg:w-64" src="{{ profile_pic.url }}"
           alt="{{ profile_pic.alt }}"/>
       </div>
-      <div class="flex place-content-center align-middle">
+      <div class="flex place-content-center align-middle pt-6 md:pl-6 md:pt-0">
         <div class="text-center leading-7">
           <h1 class="text-5xl font-serif font-semibold">{{ intro.headline }}</h1>
           <p class="my-2 font-serif">
