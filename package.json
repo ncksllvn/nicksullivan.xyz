@@ -12,6 +12,8 @@
     "build:tailwind": "tailwindcss -i ./_style/main.pcss -o ./_site/style/main.css",
     "build:production": "NODE_ENV=production npm-run-all clean \"build:11ty\" \"build:tailwind -- --minify\"",
     "clean": "rimraf _site",
+    "content:init": "cd input && git submodule init && git submodule update",
+    "content:update": "git submodule update --remote",
     "deploy": "npm run build:production; gh-pages -d _site",
     "watch": "DEBUG=Eleventy:* npm-run-all clean build:11ty -p watch:11ty watch:tailwind",
     "watch:11ty": "eleventy --serve",
